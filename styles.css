@@ -1,1 +1,163 @@
 /* your code here */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body {
+    background: #20d36e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.product {
+	position:relative;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 700px;
+	min-height:600px;
+}
+.product__photo {
+	position:absolute;
+	left:-50px;
+	top:40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fa{
+	color:white;
+}
+
+.photo-container{
+	background-color:white;
+	display:flex;
+	flex-direction:column;
+	 align-items: center;
+	border-radius:8px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.photo-main{
+    position: relative;
+    display: flex;
+	flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+	background-color:#BFEC53;
+}
+.controls{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.fa-share-alt{
+	position:absolute;
+	top:10px;
+	left:10px
+}
+.fa-heart-o{
+	position:absolute;
+	right:10px;
+	top:10px
+}
+.photo_album{
+	background-color:white;
+	pading:20px;
+}
+.photo-album ul {
+	margin:20px 0px;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+.variant li ,.photo-album li{
+	list-style:none;
+	border:1px solid gray;
+}
+.photo-album img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.product__info {
+	position:absolute;
+	top:10%;
+	right:6%;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	gap:20px;
+}
+.title h1 {
+    font-size: 30px;
+	font-weight:bold;
+    color: #333;
+}
+.title span {
+    font-size: 12px;
+    color: gray;
+}
+
+.price{
+	font-size: 20px;
+	font-weight: 300;
+    color: red;
+    margin: 10px 0;
+}
+.price span {
+	
+    font-size: 40px;
+    font-weight: 300;
+    color: red;
+    margin: 10px 0;
+}
+
+.variant {
+    margin: 15px 0;
+}
+
+.variant h3,.description h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+	color:gray;
+}
+
+.variant ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.variant img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.description ul{
+	display:flex;
+	flex-direction:column;
+	padding-left:30px
+}
+.add{
+	background-color:red;
+	border:none;
+	padding:10px;
+	max-width:150px;
+	color:white;
+	border-radius:10px
+}
